@@ -17,7 +17,8 @@ function compute()
         var resultstr = "Not valid input";
         document.getElementById("principal").focus();
     } else {
-        var resultstr = "If you deposit " + principal + ", \<br\>at an interest rate of " + rate + "%\<br\>You will receive an amount of " + amount + ",\<br\>in the year " + year +"\<br\>";
+        var resultstr = "If you deposit \<span class=\"highlight-result\"\>" + principal + "\<\/span\>, \<br\>at an interest rate of \<span class=\"highlight-result\"\>" + rate + "%\<\/span\>\<br\>You will receive an amount of \<span class=\"highlight-result\"\>" + amount + ",\<\/span\>\<br\>in the year \<span class=\"highlight-result\"\>" + year +"\<\/span\>\<br\>";
+        alert(resultstr);
     }
     //alert(resultstr);
     document.getElementById("result").innerHTML=resultstr;
